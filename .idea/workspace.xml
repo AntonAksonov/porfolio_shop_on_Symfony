@@ -6,62 +6,7 @@
       <change afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Repository/ProductRepository.php" afterDir="false" />
     </list>
-    <list id="9e2d3b6d-9ead-497a-bf7c-3308252b852f" name="added styles, routing for templates" comment="added styles, routing for templates">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/jms_serializer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/fos_rest.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/jms_serializer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/jms_serializer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/Styles/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Exo.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/Huntsman.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/OpenSans.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/envelope.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/facebook-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/footerback.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/goods/batter01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/goods/butter.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/goods/herbs.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/goods/htc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/goods/iphone.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/goods/oil.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/goods/samsung.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/google-plus-social-logotype.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/origami-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/phone-call.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/placeholder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/promo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/vk-social-logotype.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mainpage/cart.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mainpage/confirm.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mainpage/goods.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mainpage/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mainpage/order.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mainpage/product.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shomo01/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/../shomo01/templates/main.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony01.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/CartController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ConfirmController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/GoodsController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainpageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainpageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/OpenProductController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/OrderController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cart/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/confirm/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/goods/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainpage/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainpage/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/open_product/index.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/order/index.html.twig" beforeDir="false" />
-    </list>
+    <list id="9e2d3b6d-9ead-497a-bf7c-3308252b852f" name="added styles, routing for templates" comment="added styles, routing for templates" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -271,7 +216,7 @@
       <workItem from="1628167779475" duration="2534000" />
       <workItem from="1628170610528" duration="7730000" />
       <workItem from="1628500871392" duration="1663000" />
-      <workItem from="1628502750318" duration="11505000" />
+      <workItem from="1628502750318" duration="11830000" />
     </task>
     <task id="LOCAL-00001" summary="new symfony project with controllers">
       <created>1628167054671</created>
@@ -287,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628534489670</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added styles, routing for templates">
+      <created>1628535124382</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1628535124382</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
