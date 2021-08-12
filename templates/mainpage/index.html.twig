@@ -1,8 +1,32 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello MainpageController!{% endblock %}
+{% block title %}Products!{% endblock %}
 {% block body %}
-    mainpage
-    dfgdgdfg
-    <h1>qwer</h1>
+    {% for product in products %}
+        <div class="shopUnit">
+            <img src="{{ product.img }}"/>
+
+            <div class="shopUnitName">
+                {{ product.name }}
+            </div>
+            <div class="shopUnitShortDesc">
+                {{ product.description }}
+            </div>
+            <div class="shopUnitPrice">
+                {{ product.price }}
+            </div>
+            <a href="product/{{ product.id }}" class="shopUnitMore">
+                подробнее
+            </a>
+            <a href="cart">Cart</a>
+
+            <form action="/index.php?page=cart" method="post">
+                <input type="hidden" name="page" value="cart">
+                <input type="number" name="count" class="goodsCount" value="1">
+                <input type="hidden" name="id" value="<?= $good['id'] ?>">
+                <button class="shopUnitToCart">в корзину</button>
+            </form>
+
+        </div>
+    {% endfor %}
 {% endblock %}

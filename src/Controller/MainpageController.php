@@ -2,81 +2,40 @@
 
 namespace App\Controller;
 
+use App\Entity\Product;
+use Doctrine\ORM\EntityManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Repository\ProductRepository;
 
 class MainpageController extends AbstractController
 {
-//    /**
-//     * @Route("/, name="home")
-//     */
+
     #[Route('/', name: 'home')]
     public function index(): Response
     {
+        $em = $this->getDoctrine()->getManager();
+        $products = $em->getRepository(Product::class)->findAll();
+        //dd($products);
         return $this->render('mainpage/index.html.twig', [
-            'controller_name' => 'MainpageController',
+            'products' => $products,
         ]);
     }
-    #[Route('/goods', name: 'goods')]
-    public function goods(): Response
-    {
-        $goods = [
-            [
-                'id' => 1,
-                'name' => 'batter lavander',
-                'SKU' => '1',
-                'stock' => 'in stock',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium',
-                'img' => '/images/goods/butter.jpg',
-                'price' => '10',
-                'link' => '<a href="/goods.php">link</a>'
-            ],
-            [
-                'id' => 2,
-                'name' => 'batter lemon',
-                'SKU' => '2',
-                'stock' => 'out of stock',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium',
-                'img' => '/images/goods/butter.jpg',
-                'price' => '15',
-                'link' => '<a href="/goods.php">link</a>'
-            ],
-            [
-                'id' => 3,
-                'name' => 'batter tea oil',
-                'SKU' => '3',
-                'stock' => 'pre order',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium',
-                'img' => '/images/goods/butter.jpg',
-                'price' => '20',
-                'link' => '<a href="/goods.php">link</a>'
-            ],
-            [
-                'id' => 4,
-                'name' => 'oil',
-                'SKU' => '4',
-                'stock' => 'in stock',
-                'desc' => 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium',
-                'img' => '/images/goods/butter.jpg',
-                'price' => '30',
-                'link' => '<a href="/goods.php">link</a>'
-            ],
-        ];
 
-
-        return $this->render('mainpage/goods.html.twig', [
-            'controller_name' => 'MainpageController',
-            'data' => $goods
-        ]);
-    }
-    #[Route('/product', name: 'product')]
-    public function product(): Response
+    /**
+     *Route("/product/{id<\d+>}", name ="product")
+     * @param int $id
+     * @return Response
+     */
+    public function product(int $id): Response
     {
         return $this->render('mainpage/product.html.twig', [
-            'controller_name' => 'MainpageController',
+            'controller_name' => 'MainpageController'.$id,
+
         ]);
     }
+
     #[Route('/cart', name: 'cart')]
     public function cart(): Response
     {
@@ -84,6 +43,7 @@ class MainpageController extends AbstractController
             'controller_name' => 'MainpageController',
         ]);
     }
+
     #[Route('/order', name: 'order')]
     public function order(): Response
     {
@@ -91,6 +51,7 @@ class MainpageController extends AbstractController
             'controller_name' => 'MainpageController',
         ]);
     }
+
     #[Route('/confirm', name: 'cofirm')]
     public function confirm(): Response
     {
@@ -98,6 +59,7 @@ class MainpageController extends AbstractController
             'controller_name' => 'MainpageController',
         ]);
     }
+
     #[Route('/login', name: 'login')]
     public function login(): Response
     {
@@ -105,4 +67,27 @@ class MainpageController extends AbstractController
             'controller_name' => 'MainpageController',
         ]);
     }
+//    #[Route('/add-product', name: 'add_product')]
+//
+//    public function addProduct()
+//    {
+//        $em = $this->getDoctrine()->getManager();
+//
+//        $product = new Product();
+//        $product->setDescription("ssdf");
+//        $product->setName("dfsfds");
+//        $product->setPrice(33);
+//        $product->setSKU(43);
+//        $product->setStock("in");
+//        $product->setImg("Sds");
+//
+//        $em->persist($product);
+//        $em->flush();
+//
+//        return $this->render('mainpage/cart.html.twig', [
+//            'controller_name' => 'MainpageController',
+//        ]);
+//    }
+
+
 }
