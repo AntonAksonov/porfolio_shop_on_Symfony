@@ -2,45 +2,82 @@
 
 namespace App\Controller;
 
-use App\Entity\Product;
+use App\Entity\ShopItems;
+use App\Entity\ShopCart;
+use App\Repository\ShopCartRepository;
 use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\ProductRepository;
 
 class MainpageController extends AbstractController
 {
+    private SessionInterface $session;
+
+    /**
+     * IndexController constructor.
+     * @param SessionInterface $session
+     */
+    public function __construct(SessionInterface $session)
+    {
+        $this->session = $session;
+        $this->session->start();
+    }
+
 
     #[Route('/', name: 'home')]
     public function index(): Response
     {
         $em = $this->getDoctrine()->getManager();
-        $products = $em->getRepository(Product::class)->findAll();
-        //dd($products);
+        $products = $em->getRepository(ShopItems::class)->findAll();
         return $this->render('mainpage/index.html.twig', [
             'products' => $products,
         ]);
     }
 
-    /**
-     *Route("/product/{id<\d+>}", name ="product")
-     * @param int $id
-     * @return Response
-     */
+    #[Route('/product/{id}', name: "product")]
     public function product(int $id): Response
     {
-        return $this->render('mainpage/product.html.twig', [
-            'controller_name' => 'MainpageController'.$id,
 
+        $em = $this->getDoctrine()->getManager();
+        $product = $em->getRepository(ShopItems::class)->find($id);
+        return $this->render('mainpage/product.html.twig', [
+            'product' => $product,
         ]);
     }
 
-    #[Route('/cart', name: 'cart')]
-    public function cart(): Response
+    /**
+     * @Route("/shop/cart/add/{id<\d+>}", name="shopAddToCart")
+     *
+     * @param ShopItems $product
+     * @param EntityManagerInterface $em
+     * @return Response
+     */
+    public function shopAddToCart(ShopItems $shopItems, EntityManagerInterface $em): Response
     {
+        $sessionId = $this->session->getId();
+        $shopCart = (new ShopCart())
+            ->setShopItem($shopItems)
+            ->setCount(1)
+            ->setSessionId($sessionId);
+
+        $em->persist($shopCart);
+        $em->flush();
+
+        return $this->redirectToRoute('cart', ['id' => $shopItems->getId()]);
+    }
+
+    #[Route('/cart', name: 'cart')]
+    public function cart(ShopCartRepository $shopCartRepository): Response
+    {
+        $session = $this->session->getId();
+        $items = $shopCartRepository->findBy(['sessionId' => $session]);
+//        dd($session);
         return $this->render('mainpage/cart.html.twig', [
-            'controller_name' => 'MainpageController',
+            'items' => $items,
         ]);
     }
 
@@ -67,27 +104,6 @@ class MainpageController extends AbstractController
             'controller_name' => 'MainpageController',
         ]);
     }
-//    #[Route('/add-product', name: 'add_product')]
-//
-//    public function addProduct()
-//    {
-//        $em = $this->getDoctrine()->getManager();
-//
-//        $product = new Product();
-//        $product->setDescription("ssdf");
-//        $product->setName("dfsfds");
-//        $product->setPrice(33);
-//        $product->setSKU(43);
-//        $product->setStock("in");
-//        $product->setImg("Sds");
-//
-//        $em->persist($product);
-//        $em->flush();
-//
-//        return $this->render('mainpage/cart.html.twig', [
-//            'controller_name' => 'MainpageController',
-//        ]);
-//    }
 
 
 }

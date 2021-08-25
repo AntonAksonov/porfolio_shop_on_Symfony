@@ -3,12 +3,14 @@
 namespace App\Entity;
 
 use App\Repository\ProductRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass=ProductRepository::class)
  */
-class Product
+class ShopItems
 {
     /**
      * @ORM\Id
@@ -46,6 +48,16 @@ class Product
      * @ORM\Column(type="integer")
      */
     private $price;
+
+    /**
+     * @ORM\OneToMany(targetEntity=ShopCart::class, mappedBy="ShopItem", orphanRemoval=true)
+     */
+    private $shopCarts;
+
+    public function __construct()
+    {
+        $this->shopCarts = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -120,6 +132,36 @@ class Product
     public function setPrice(int $price): self
     {
         $this->price = $price;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|ShopCart[]
+     */
+    public function getShopCarts(): Collection
+    {
+        return $this->shopCarts;
+    }
+
+    public function addShopCart(ShopCart $shopCart): self
+    {
+        if (!$this->shopCarts->contains($shopCart)) {
+            $this->shopCarts[] = $shopCart;
+            $shopCart->setShopItem($this);
+        }
+
+        return $this;
+    }
+
+    public function removeShopCart(ShopCart $shopCart): self
+    {
+        if ($this->shopCarts->removeElement($shopCart)) {
+            // set the owning side to null (unless already changed)
+            if ($shopCart->getShopItem() === $this) {
+                $shopCart->setShopItem(null);
+            }
+        }
 
         return $this;
     }
