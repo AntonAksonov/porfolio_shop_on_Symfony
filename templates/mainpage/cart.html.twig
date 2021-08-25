@@ -1,12 +1,37 @@
 {% extends 'base.html.twig' %}
 {% block title %}Hello cart!{% endblock %}
 {% block body %}
+    <style>
+        .example-wrapper{
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        .itemClass {
+            text-decoration: none;
+            color: #222222;
+        }
+
+        .itemClass:hover {
+            text-decoration: none;
+            color: #222222;
+        }
+.sum {
+    margin-left: 5%;
+}
+.btn-success {
+    margin-right: 5%;;
+}
+    </style>
     {% set sum = 0 %}
+<div class="example-wrapper">
+    <hr>
+
+    <div class="row mx-5">
     {% for item in items %}
-        <div class="col-md-4">
+        <div class="col-md-12">
             <a href="{{ path('product', {'id': item.shopItem.id}) }}" class="itemClass">
-                <div class="card mb-4 shadow-sm">
-                    <img style="margin-left:25%" width="50%" src="{{ item.shopItem.img }}" alt="">
+                <div class="card mb-12 shadow-sm">
+                    <img style="margin-left:"" width="5%" src="{{ item.shopItem.img }}" alt="">
                     <rect width="100%" height="100%" fill="#55595c"></rect>
                     <div class="card-body">
                         <h4>{{ item.shopItem.name }}</h4>
@@ -14,7 +39,7 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <h5>{{ item.shopItem.price }} $</h5>
                         </div>
-                        <a href="product/{{ product.id }}" >
+                        <a href="product/{{ item.shopItem.id }}" >
                             подробнее
                         </a>
                         {% set sum = sum + item.shopItem.price %}
@@ -23,6 +48,11 @@
             </a>
         </div>
     {% endfor %}
+    </div>
+    <hr>
+    <div class="sum">Итого: {{ sum }}</div>
+    <a href="{{ path('order') }}" class="float-right btn btn-success mt-2">Оформить заказ</a>
+</div>
 
 
 {% endblock %}

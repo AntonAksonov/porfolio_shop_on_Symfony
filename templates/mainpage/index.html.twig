@@ -13,13 +13,13 @@
             text-decoration: none;
             color: #222222;
         }
-    </style>s
+    </style>
     <div class="example-wrapper">
         <hr>
 
         <div class="row mx-5">
             {% for product in products %}
-                <div class="col-md-4">
+                <div class="col-md-4" >
                     <a href="{{ path('product', {'id': product.id}) }}" class="itemClass">
                         <div class="card mb-4 shadow-sm">
                             <img style="margin-left:25%" width="50%" src="{{ product.img }}">
@@ -31,9 +31,9 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                     <h5>{{ product.price }} $</h5>
                                 </div>
-                                 <a href="product/{{ product.id }}" >
-                                 подробнее
-                                 </a>
+                                <a href="product/{{ product.id }}">
+                                    подробнее
+                                </a>
                             </div>
                         </div>
                     </a>
@@ -41,13 +41,5 @@
             {% endfor %}
         </div>
     </div>
-
-
-    {# <form action="/index.php?page=cart" method="post"> #}
-    {# <input type="hidden" name="page" value="cart"> #}
-    {# <input type="number" name="count" class="goodsCount" value="1"> #}
-    {# <input type="hidden" name="id" value="<?= $good['id'] ?>"> #}
-    {# <button class="shopUnitToCart">в корзину</button> #}
-    {# </form> #}
 
 {% endblock %}

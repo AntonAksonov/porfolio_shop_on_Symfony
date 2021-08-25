@@ -1,5 +1,18 @@
 {% extends 'base.html.twig' %}
 {% block title %}Hello order!{% endblock %}
 {% block body %}
-    <h1>order</h1>
+    <style>
+        .example-wrapper{
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+    </style>
+    <div class="example-wrapper">
+        <h1>{{ title }}</h1>
+        <hr>
+
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+    </div>
 {% endblock %}

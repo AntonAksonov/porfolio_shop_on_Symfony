@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42bf4ce3-5943-409d-a3ed-2ff1fb4934c5" name="Default Changelist" comment="add sql products table.">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210817133135.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210818125208.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210818125455.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210818130129.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210818130426.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/ShopCart.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/ShopOrder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ShopCartRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ShopItemsRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ShopOrderRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony01.iml" afterDir="false" />
+    <list default="true" id="42bf4ce3-5943-409d-a3ed-2ff1fb4934c5" name="Default Changelist" comment="sessins">
+      <change afterPath="$PROJECT_DIR$/src/Form/OrderFormType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MainpageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainpageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ShopItems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProductRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/ShopOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ShopOrder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mainpage/cart.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainpage/cart.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/mainpage/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainpage/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainpage/product.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainpage/product.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainpage/order.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainpage/order.html.twig" afterDir="false" />
     </list>
     <list id="9e2d3b6d-9ead-497a-bf7c-3308252b852f" name="added styles, routing for templates" comment="added styles, routing for templates" />
     <option name="SHOW_DIALOG" value="false" />
@@ -243,7 +232,7 @@
       <workItem from="1628535856306" duration="4755000" />
       <workItem from="1628590479292" duration="2631000" />
       <workItem from="1628594673708" duration="20972000" />
-      <workItem from="1629119066800" duration="22481000" />
+      <workItem from="1629119066800" duration="30565000" />
     </task>
     <task id="LOCAL-00001" summary="new symfony project with controllers">
       <created>1628167054671</created>
@@ -280,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628764936496</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="sessins">
+      <created>1629891491232</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1629891491232</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +299,8 @@
     <MESSAGE value="new symfony project with controllers" />
     <MESSAGE value="added styles, routing for templates" />
     <MESSAGE value="add sql products table." />
-    <option name="LAST_COMMIT_MESSAGE" value="add sql products table." />
+    <MESSAGE value="sessins" />
+    <option name="LAST_COMMIT_MESSAGE" value="sessins" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

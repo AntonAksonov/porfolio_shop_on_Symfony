@@ -10,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class ShopOrder
 {
+    public const STATUS_NEW_ORDER = 1;
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
