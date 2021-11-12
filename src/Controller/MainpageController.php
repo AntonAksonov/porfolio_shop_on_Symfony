@@ -33,7 +33,12 @@ class MainpageController extends AbstractController
     }
 
 
-    #[Route('/', name: 'home')]
+//    #[Route('/', name: 'home')]
+    /**
+     * @Route("/home", name="home")
+     *
+     *
+     */
     public function index(): Response
     {
 
@@ -86,20 +91,18 @@ class MainpageController extends AbstractController
     {
         $session = $this->session->getId();
         $items = $shopCartRepository->findBy(['sessionId' => $session]);
-//        $items = $shopCartRepository->findAll();
-       // dd($session);
         return $this->render('mainpage/cart.html.twig', [
             'items' => $items,
         ]);
     }
 
-//    #[Route('/order', name: 'order')]
-//    public function order(): Response
-//    {
-//        return $this->render('mainpage/order.html.twig', [
-//            'controller_name' => 'MainpageController',
-//        ]);
-//    }
+    #[Route('/order', name: 'order')]
+    public function order(): Response
+    {
+        return $this->render('mainpage/order.html.twig', [
+            'controller_name' => 'MainpageController',
+        ]);
+    }
 
     /**
      * @Route("/order", name="order")
