@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42bf4ce3-5943-409d-a3ed-2ff1fb4934c5" name="Default Changelist" comment="sessins">
-      <change afterPath="$PROJECT_DIR$/src/Form/OrderFormType.php" afterDir="false" />
+    <list default="true" id="9545fee6-79f6-4502-b7c2-89085753e464" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainpageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainpageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/ShopOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/ShopOrder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainpage/cart.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainpage/cart.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainpage/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainpage/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mainpage/order.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mainpage/order.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/mainpage/product.html.twig" beforeDir="false" />
     </list>
-    <list id="9e2d3b6d-9ead-497a-bf7c-3308252b852f" name="added styles, routing for templates" comment="added styles, routing for templates" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="PhpDebugGeneral" xdebug_debug_can_accept_external_connections="false" xdebug_force_break_when_no_path_mapping="false" xdebug_force_break_when_outside_project="false" />
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
@@ -175,135 +161,32 @@
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/rest-bundle" />
     </include_path>
   </component>
-  <component name="ProjectId" id="1wJA1Kwk2TI7YnMtfABf7CKr2tt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="20MlHpzOmC7tg3wRU2SF89SeSWi" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/public/Styles" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-    </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner scope="XML" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="42bf4ce3-5943-409d-a3ed-2ff1fb4934c5" name="Default Changelist" comment="" />
-      <changelist id="9e2d3b6d-9ead-497a-bf7c-3308252b852f" name="added styles, routing for templates" comment="" />
-      <created>1628166105604</created>
+      <changelist id="9545fee6-79f6-4502-b7c2-89085753e464" name="Default Changelist" comment="" />
+      <created>1635862255249</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1628166105604</updated>
-      <workItem from="1628166110470" duration="492000" />
-      <workItem from="1628166644467" duration="1067000" />
-      <workItem from="1628167779475" duration="2534000" />
-      <workItem from="1628170610528" duration="7730000" />
-      <workItem from="1628500871392" duration="1663000" />
-      <workItem from="1628502750318" duration="12266000" />
-      <workItem from="1628535856306" duration="4755000" />
-      <workItem from="1628590479292" duration="2631000" />
-      <workItem from="1628594673708" duration="20972000" />
-      <workItem from="1629119066800" duration="30565000" />
+      <updated>1635862255249</updated>
+      <workItem from="1635862258801" duration="16000" />
+      <workItem from="1636728391061" duration="832000" />
     </task>
-    <task id="LOCAL-00001" summary="new symfony project with controllers">
-      <created>1628167054671</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1628167054673</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added styles, routing for templates">
-      <created>1628534489670</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1628534489670</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added styles, routing for templates">
-      <created>1628535124382</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1628535124382</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added styles, routing for templates">
-      <created>1628535323986</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1628535323986</updated>
-    </task>
-    <task id="LOCAL-00005" summary="add sql products table.">
-      <created>1628764936496</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1628764936496</updated>
-    </task>
-    <task id="LOCAL-00006" summary="sessins">
-      <created>1629891491232</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1629891491232</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="new symfony project with controllers" />
-    <MESSAGE value="added styles, routing for templates" />
-    <MESSAGE value="add sql products table." />
-    <MESSAGE value="sessins" />
-    <option name="LAST_COMMIT_MESSAGE" value="sessins" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
